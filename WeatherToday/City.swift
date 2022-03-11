@@ -6,6 +6,7 @@
 //
 
 import Foundation
+import UIKit
 /*
  {
     "city_name":"서울",
@@ -34,5 +35,45 @@ struct City: Codable {
     var stringRainfallProbability: String {
         let s = NSString(format: "%.0f", rainfall_probability) as String
         return "강수확률: " + s + "%"
+    }
+    
+    /*
+     10 : sunny
+     11 : cloudy
+     12 : rainy
+     13 : snowy
+     */
+    var iconState: UIImage {
+        
+        let emptyImage: UIImage = UIImage()
+        
+        switch state {
+        case 10:
+            if let iconImage: UIImage = UIImage(named: "sunny"){
+            return iconImage
+            } else {
+                return emptyImage
+            }
+        case 11:
+            if let iconImage: UIImage = UIImage(named: "cloudy"){
+            return iconImage
+            } else {
+                return emptyImage
+            }
+        case 12:
+            if let iconImage: UIImage = UIImage(named: "rainy"){
+            return iconImage
+            } else {
+                return emptyImage
+            }
+        case 13:
+            if let iconImage: UIImage = UIImage(named: "snowy"){
+            return iconImage
+            } else {
+                return emptyImage
+            }
+        default:
+           return emptyImage
+        }
     }
 }

@@ -28,7 +28,7 @@ class CityListViewController: UIViewController,UITableViewDataSource {
         cell.nameLabel?.text = city.city_name
         cell.temperatureLabel?.text = city.stringTemperature
         cell.rainfallPercentageLabel?.text = city.stringRainfallProbability
-        
+        cell.iconImageView.image = city.iconState
         return cell
     }
     
