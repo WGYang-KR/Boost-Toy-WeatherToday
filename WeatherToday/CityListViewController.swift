@@ -34,6 +34,8 @@ class CityListViewController: UIViewController,UITableViewDataSource {
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
+        
+        self.navigationItem.title = self.korean_nameToSet
  }
     
     override func viewDidLoad() {
