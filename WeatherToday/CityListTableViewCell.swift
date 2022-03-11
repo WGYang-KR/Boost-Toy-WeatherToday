@@ -14,6 +14,8 @@ class CityListTableViewCell: UITableViewCell {
     @IBOutlet weak var temperatureLabel: UILabel!
     @IBOutlet weak var rainfallPercentageLabel: UILabel!
     
+    var structCity: City?
+    
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code

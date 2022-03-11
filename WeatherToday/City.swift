@@ -26,7 +26,20 @@ struct City: Codable {
     var fahrenheit: Float {
         return celsius * 1.8 + 32
     }
-    
+    var stringState: String {
+        switch state {
+        case 10:
+            return "맑음"
+        case 11:
+            return "구름"
+        case 12:
+            return "비"
+        case 13:
+            return "눈"
+        default:
+            return ""
+        }
+    }
     var stringTemperature: String {
         let stringFahrenheit = NSString(format:"%.1f", fahrenheit) as String
         return "섭씨 " + String(celsius) + "도 / 화씨 " + stringFahrenheit + "도"

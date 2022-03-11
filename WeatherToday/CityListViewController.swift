@@ -25,6 +25,7 @@ class CityListViewController: UIViewController,UITableViewDataSource {
         let cell: CityListTableViewCell = tableView.dequeueReusableCell(withIdentifier: cellIdentifier, for: indexPath) as! CityListTableViewCell
         let city: City = self.cities[indexPath.row]
         
+        cell.structCity = city
         cell.nameLabel?.text = city.city_name
         cell.temperatureLabel?.text = city.stringTemperature
         cell.rainfallPercentageLabel?.text = city.stringRainfallProbability
@@ -62,6 +63,20 @@ class CityListViewController: UIViewController,UITableViewDataSource {
         
         
     }
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        
+        guard let nextViewController: DetailViewController = segue.destination as? DetailViewController else {
+            return
+        }
+        
+        guard let cell: CityListTableViewCell = sender as? CityListTableViewCell else {
+            return
+        }
+        
+        nextViewController.city = cell.structCity
+
+    }
+
     
 
     /*
