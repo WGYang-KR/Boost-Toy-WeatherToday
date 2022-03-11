@@ -17,6 +17,8 @@
 		6AA5402427D9E2500043FB8B /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AA5402327D9E2500043FB8B /* DetailViewController.swift */; };
 		6AA5402627DB21A50043FB8B /* CountryListTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AA5402527DB21A50043FB8B /* CountryListTableViewCell.swift */; };
 		6AA5402827DB24690043FB8B /* Country.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AA5402727DB24690043FB8B /* Country.swift */; };
+		6AE00C2B27DB323C001DA8E7 /* City.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AE00C2A27DB323C001DA8E7 /* City.swift */; };
+		6AE00C2D27DB40A2001DA8E7 /* CityListTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AE00C2C27DB40A2001DA8E7 /* CityListTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +34,8 @@
 		6AA5402327D9E2500043FB8B /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
 		6AA5402527DB21A50043FB8B /* CountryListTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountryListTableViewCell.swift; sourceTree = "<group>"; };
 		6AA5402727DB24690043FB8B /* Country.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Country.swift; sourceTree = "<group>"; };
+		6AE00C2A27DB323C001DA8E7 /* City.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = City.swift; sourceTree = "<group>"; };
+		6AE00C2C27DB40A2001DA8E7 /* CityListTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CityListTableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -66,12 +70,14 @@
 			children = (
 				6AA5400D27D9DB0F0043FB8B /* AppDelegate.swift */,
 				6AA5400F27D9DB0F0043FB8B /* SceneDelegate.swift */,
-				6AA5401127D9DB0F0043FB8B /* ViewController.swift */,
-				6AA5402727DB24690043FB8B /* Country.swift */,
 				6AA5401327D9DB0F0043FB8B /* Main.storyboard */,
+				6AA5401127D9DB0F0043FB8B /* ViewController.swift */,
 				6AA5402527DB21A50043FB8B /* CountryListTableViewCell.swift */,
 				6AA5402127D9E2020043FB8B /* CityListViewController.swift */,
+				6AE00C2C27DB40A2001DA8E7 /* CityListTableViewCell.swift */,
 				6AA5402327D9E2500043FB8B /* DetailViewController.swift */,
+				6AA5402727DB24690043FB8B /* Country.swift */,
+				6AE00C2A27DB323C001DA8E7 /* City.swift */,
 				6AA5401627D9DB120043FB8B /* Assets.xcassets */,
 				6AA5401827D9DB120043FB8B /* LaunchScreen.storyboard */,
 				6AA5401B27D9DB120043FB8B /* Info.plist */,
@@ -151,11 +157,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				6AA5402827DB24690043FB8B /* Country.swift in Sources */,
+				6AE00C2D27DB40A2001DA8E7 /* CityListTableViewCell.swift in Sources */,
 				6AA5401227D9DB0F0043FB8B /* ViewController.swift in Sources */,
 				6AA5400E27D9DB0F0043FB8B /* AppDelegate.swift in Sources */,
 				6AA5402627DB21A50043FB8B /* CountryListTableViewCell.swift in Sources */,
 				6AA5402427D9E2500043FB8B /* DetailViewController.swift in Sources */,
 				6AA5401027D9DB0F0043FB8B /* SceneDelegate.swift in Sources */,
+				6AE00C2B27DB323C001DA8E7 /* City.swift in Sources */,
 				6AA5402227D9E2020043FB8B /* CityListViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -66,7 +66,8 @@ class ViewController: UIViewController, UITableViewDataSource{
             return
         }
         
-        nextViewController.countryToSet = cell.asset_name
+        nextViewController.asset_nameToSet = cell.asset_name
+        nextViewController.korean_nameToSet = cell.korean_name
     }
 
 
